@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DevMachine Homepage
 
-## Getting Started
+데브머신의 랜딩 페이지·비즈니스 홈페이지·업무 자동화 서비스를 소개하고 직접 프로젝트 상담으로 연결하는 한국어 랜딩 페이지입니다.
 
-First, run the development server:
+## 기술 구성
+
+- Next.js App Router
+- TypeScript
+- Tailwind CSS v4와 프로젝트 전용 CSS
+- React Client Component 기반 문의폼 상태 처리
+
+## 로컬 실행
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[http://localhost:3000](http://localhost:3000)에서 확인할 수 있습니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 검증
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
 
-## Learn More
+## 배포 전에 필요한 실제 정보
 
-To learn more about Next.js, take a look at the following resources:
+- 문의를 받을 이메일 또는 카카오톡 채널
+- 문의 전송 방식과 개인정보 보관 정책
+- 운영 도메인과 `NEXT_PUBLIC_SITE_URL`
+- 사업자 또는 브랜드 푸터 표기 정보
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+현재 문의폼은 입력·오류·처리·완료 상태만 구현되어 있으며, 위 정보가 확정되기 전에는 외부로 내용을 전송하거나 저장하지 않습니다.
