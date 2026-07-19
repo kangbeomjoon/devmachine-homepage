@@ -40,7 +40,7 @@ export default function Home() {
       <section id="main-content" className="hero" aria-labelledby="hero-title">
         <figure className="hero-visual">
           <Image
-            src="/images/devmachine-operator-v4.png"
+            src="/images/devmachine-operator-v6.png"
             alt="정면을 바라보는 근육질 데브머신 게임 캐릭터 일러스트"
             fill
             priority
