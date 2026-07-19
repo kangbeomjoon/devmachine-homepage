@@ -4,6 +4,7 @@ import { cases, faq, process, reasons, services } from "@/content/ko";
 
 const kmongProfile = "https://kmong.com/@데브머신";
 const soomgoProfile = "https://soomgo.com/profile/users/15837480";
+const githubProfile = "https://github.com/kangbeomjoon";
 
 export default function Home() {
   return (
@@ -191,7 +192,9 @@ export default function Home() {
           <p>알고 있는 내용만 적어도 괜찮습니다. 필요한 범위는 상담 과정에서 함께 정리합니다.</p>
           <div className="contact-note">
             <strong>DIRECT CONTACT</strong>
-            <span>최종 이메일·카카오톡 채널 연결 전</span>
+            <span>전화 또는 이메일로도 상담할 수 있습니다.</span>
+            <a href="tel:+821077637698">010-7763-7698</a>
+            <a href="mailto:kobe7698@gmail.com">kobe7698@gmail.com</a>
           </div>
         </div>
         <InquiryForm />
@@ -200,9 +203,20 @@ export default function Home() {
       <footer>
         <a className="wordmark footer-mark" href="#top"><span>DEV</span>MACHINE</a>
         <p>사업 아이디어를 실제로 작동하는 웹사이트와 자동화 시스템으로 만듭니다.</p>
+        <address className="footer-contact">
+          <span className="footer-contact-label">CONTACT</span>
+          <strong>데브머신 연락처</strong>
+          <span>강범준 · 대표 / Full-Stack Developer</span>
+          <div className="footer-contact-links">
+            <a href="tel:+821077637698">TEL 010-7763-7698</a>
+            <a href="mailto:kobe7698@gmail.com">MAIL kobe7698@gmail.com</a>
+            <a href={githubProfile} target="_blank" rel="noreferrer">GITHUB kangbeomjoon</a>
+          </div>
+        </address>
         <nav aria-label="보조 링크">
           <a href={kmongProfile} target="_blank" rel="noreferrer">크몽</a>
           <a href={soomgoProfile} target="_blank" rel="noreferrer">숨고</a>
+          <a href={githubProfile} target="_blank" rel="noreferrer">GitHub</a>
           <a href="#inquiry">프로젝트 문의</a>
           <a href="#privacy-notice">개인정보 안내</a>
         </nav>
